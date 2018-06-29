@@ -16,7 +16,8 @@ public class GetURL {
     @Resource
     public UrlService urlservice;
 
-    @RequestMapping(path="/getbaidu", method=RequestMethod.GET)
+//    @RequestMapping(path="/getbaidu", method=RequestMethod.GET)
+    @NewRM(ph2="/getbaidu", md = RequestMethod.GET)
     public String getBaiduurl(){
         return urlservice.getBaiduurl();
 //        return baiduurl;
